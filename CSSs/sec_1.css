@@ -28,3 +28,29 @@ main{
     width: 80%;
     height: 650px;
 }
+
+
+
+.section{
+    margin-right: 100px;
+    display: inline-block;
+    background-color: rgb(51, 54, 54);
+    width: 20%;
+    height: 80px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.section a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    display: inline-block;
+    text-indent: 90px;
+    height: 100%;
+    width: 100%;
+}
+.section:hover{
+    background-color: rgba(13, 160, 13, 0.87);
+    transform: scale(1.1);
+}
