@@ -1,0 +1,39 @@
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo img{
+    width: 50px;
+    margin: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+
+}
+ul li{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 150px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+}
+ul li:hover{
+    background-color: rgb(2, 70, 2);
+    border: 2px solid rgb(2, 50, 2);
+}
+li a{
+    display: block;
+}
