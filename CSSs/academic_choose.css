@@ -114,6 +114,9 @@ h1 {
 /* ===== Submit ===== */
 
 .finish_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--bg);
     margin-left: 300px;
     width: 250px;
