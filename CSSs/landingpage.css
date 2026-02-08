@@ -23,9 +23,25 @@ body {
     padding: 20px 60px;
 }
 
+.logo img{
+    background: linear-gradient(135deg, #00c6d8, #007a86);
+    width: 50px;
+    border-radius: 10px;
+}
+
 .logo {
+    display: flex;
     font-size: 22px;
     font-weight: bold;
+    gap: 10px;
+}
+
+.logo:hover{
+    scale: 1.2;
+}
+
+.logo p{
+    transform:translatey(12px) ;
 }
 
 .navbar nav a {
@@ -40,7 +56,7 @@ body {
     padding: 12px 22px;
     border-radius: 8px;
     font-size: 14px;
-    background: #00c2d1;
+    background: linear-gradient(135deg, #00c6d8, #007a86);
     color: #000;
 }
 
@@ -62,7 +78,7 @@ body {
 }
 
 .primary {
-    background: #00c2d1;
+    background: linear-gradient(135deg, #00c6d8, #007a86);
     color: #000;
 }
 
@@ -173,14 +189,18 @@ body {
 }
 
 .card:hover{
-    background: #01a5b1;
-    scale: 1.2;
+    background: linear-gradient(135deg, #00c6d8, #007a86);
+    box-shadow: 4px 4px 4px #000;
+    scale: 1.1;
     p{
         color: #3b3939;
         font-weight: bold;
     }
     h2{
         color: #000;
+    }
+    h3{
+        color: #11161c;
     }
 }
 

@@ -1,0 +1,132 @@
+
+/* ===== CONTENT ===== */
+
+.content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 80px 120px;
+}
+
+.header{
+    display: grid;
+    justify-items:center ;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    max-width: 620px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  background: linear-gradient(180deg, #141b23, #10161d);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 26px;
+}
+
+.card-title {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  color: #00c6d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.card-title p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ===== OPTIONS ===== */
+
+.options {
+  display: flex;
+  gap: 14px;
+}
+
+.option {
+  flex: 1;
+  cursor: pointer;
+}
+
+.option input{
+    display: none;
+}
+
+.option .a {
+  display: block;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #1f2630;
+  background: #0f141b;
+  text-align: center;
+}
+
+.option input:checked + .a,
+.option input:checked + .b {
+    border: 2px solid #00c6d8;
+    box-shadow: 0 0 0 1px rgba(0,198,216,.4);
+}
+
+.option:hover .a ,
+.option:hover .b{
+    scale: 1.05;
+}
+
+/* ===== SELECT ===== */
+
+.select {
+    width: 100%;
+    padding: 16px 44px 16px 18px;
+    border-radius: 12px;
+    border: 2px solid #1f2630;
+    background-color: #0f141b;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.select:enabled{
+    border-color: #00c6d8;
+    box-shadow: 0 0 0 1px rgba(0,198,216,.4);
+}
+
+/* ===== Submit ===== */
+
+.finish_button{
+    color: var(--bg);
+    margin-left: 300px;
+    width: 250px;
+    height: 60px;
+    background: var(--primary);
+    box-shadow: 0 0 0 1px rgba(0,198,216,.4);
+    border-radius: 20px;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.finish_button:hover{
+    scale: 1.05;
+}

@@ -1,0 +1,110 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #12171e;
+  --border: #1f2630;
+  --muted: #aeb4be;
+  --primary: linear-gradient(135deg, #00c6d8, #007a86);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+}
+
+/* ===== LAYOUT ===== */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 260px;
+    background: linear-gradient(180deg, #0c1117, #0a0e13);
+    border-right: 1px solid var(--border);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo div{
+    margin: 5px 7px;
+    font-size: 30px;
+}
+
+.logo:hover{
+    scale: 1.1;
+}
+
+.logo img{
+    width: 50px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #00c6d8, #007a86);
+}
+
+.menu a,
+.bottom a {
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.bottom a:hover{
+    background-color: #aeb4be2c;
+}
+
+.menu a:hover{
+    border-left: 3px solid #00c6d8;
+    background-color: #aeb4be2c;
+}
+
+.menu a.active {
+    border-left: 3px solid #00c6d8;
+    background: rgba(0,198,216,.12);
+    color: var(--primary);
+    .side_icon{
+        color: #00c6d8;
+    }
+}
+
+.side_icon{
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.bottom {
+    width: 210px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--border);
+    margin-top: auto;
+}

@@ -1,0 +1,101 @@
+:root {
+  --panel: #1b2129;
+  --border: #29313b;
+  --muted: #aeb4be;
+  --primary: linear-gradient(135deg, #00c6d8, #007a86);
+}
+
+/* === HEADER ===*/
+.content {
+    margin-left: 260px;
+    flex: 1;
+}
+
+.header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+}
+
+.header h1{
+    display: flex;
+}
+
+.icon.bi{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #1b2129;
+    border: none;
+    text-align: center;
+}
+
+/*=== MAIN ===*/
+
+.main {
+    padding: 10px 20px;
+}
+
+.main header{
+    display: flex;
+    gap: 10px;
+    h3{
+        margin-top: 10px;
+    }
+}
+
+.bi-list-task{
+    font-size: 35px;
+    color: #00c6d8;
+}
+
+/*=== LECTURES ===*/
+
+.lectures {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    gap: 20px;
+}
+
+.lecture {
+    height: 70px;
+    background-color: var(--panel);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 12.5px;
+    border: 1px solid var(--border) ;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #00c6d82c;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: #00c6d81c;
+    color: #00c6d8;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+.title {
+    font-size: 17px;
+}
+
+.lecture:hover {
+    scale: 1.05;
+    background-color: #00c6d81c;
+    border: 2px solid #00c6d82c;
+    box-shadow: 4px 4px 4px black;
+    p{
+        background: var(--primary);
+        border: none;
+        color: #1b2129;
+        padding-top: 7px;
+        text-align: center;
+    }
+}
