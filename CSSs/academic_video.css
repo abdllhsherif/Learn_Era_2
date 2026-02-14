@@ -19,12 +19,14 @@
 
 .content .right {
     grid-area: right;
+    width: 2fr;
     display: grid;
     grid-template-rows: minmax( 1fr , 250px) ;
     gap: 30px;
 }
 .content .left {
     grid-area: left;
+    width: 1fr;
     display: grid;
     grid-template-rows: minmax( auto , 400px) ;
     gap: 30px;
@@ -74,42 +76,26 @@
 
 /*=== NEXT-PREVIOUS ===*/
 .next-previous {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
     width: 100%;
     background: var(--border);
     border-radius: 10px;
-    padding: 10px;
+    height: 30px;
 }
 
-
-/*=== SOURCES ===*/
-.source-title {
+.next-previous a {
     display: flex;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 15px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.option {
-  flex: 1;
-  cursor: pointer;
-}
-
-.option input{
-    display: none;
-}
-
-.option .a {
-  display: block;
-  text-align: center;
-}
-
-.option input:checked + .pd {
-    border-bottom: 2px solid #00c6d8;
-}
-
-.option input:checked + .slid  {
-    border-bottom: 2px solid #00c6d8;
+.next-previous a:hover {
+    background-color: #007b866e;
+    border-radius: 10px;
 }
 
 /*=== pdf ===*/
@@ -117,32 +103,16 @@
     display: flex;
     background: var(--border);
     padding: 20px;
-    height: 300px;
     border-radius: 15px;
-}
-
-.pdf img{
-    height: 100%;
-    width: fit-content;
-    border-radius: 10px;
-}
-
-.pdf-content {
-    margin-left: 20px;
-    width: 100%;
-    display: grid;
-    grid-template-rows: minmax(1fr , 250px) ;
+    width: 750px;
     justify-content: space-between;
+    gap: 30px;
 }
 
-.pdf-content>p {
-    color: var(--muted);
-}
-
-.pdf-content a {
+.pdf a {
     display: flex;
     background: var(--primary);
-    width: 200px;
+    width: 100%;
     height: 50px;
     justify-content: center;
     padding-top: 13px;
@@ -154,6 +124,10 @@
     p{
         color: var(--bg);
     }
+}
+.pdf a:hover {
+    transform: translateX(-4px) translateY(-4px);
+    box-shadow: 4px 4px 4px #0b0f14;
 }
 
 
